@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     "use strict";
     $(".navbar").css({
-        'margin-top': '610px',
+        'margin-top': '-100px',
         'opacity': '1'
     })
     $(".navbar-nav>li>a").css({
@@ -25,7 +25,7 @@ $(document).ready(function() {
         'padding-top': '0px'
     });
     $(".navbar-default").css({
-        'background-color': 'yellow'
+        'background-color': 'red'
     });
     
     $(window).scroll(function() {
@@ -48,11 +48,11 @@ $(document).ready(function() {
                 'padding-top': '0px'
             });
             $(".navbar-default").css({
-                'background-color': 'yellow'
+                'background-color': 'red'
             });
         } else {
             $(".navbar").css({
-                'margin-top': '610px',
+                'margin-top': '-100px',
                 'opacity': '1'
             })
             $(".navbar-nav>li>a").css({
@@ -65,7 +65,7 @@ $(document).ready(function() {
                 'padding-top': '0px'
             });
             $(".navbar-default").css({
-                'background-color': 'yellow'
+                'background-color': 'red'
             });
         }
     });

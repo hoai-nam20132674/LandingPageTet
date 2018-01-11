@@ -88,6 +88,7 @@
      						<img src="images/logo2.png" alt="Logo">
      					</a>
      				</div>
+                    
      				<!-- Collect the nav links, forms, and other content for toggling -->
      				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      					<ul class="nav navbar-nav navbar-right">
@@ -98,9 +99,18 @@
      						<li><a href="#SCREENS">Đồng hồ</a> </li>
      						<li><a href="#DOWNLOAD">Ưu đãi lớn </a> </li>
      						<li><a href="#CONTACT">Liên hệ với chúng tôi </a> </li>
-                            <li type="button"><a class="btn btn-default" role="button" href="tel:01642911168" style="font-family: sans-serif;"><i class="fa fa-phone-square" aria-hidden="true"></i>xxxxxxxx</a></li>
+                            <li type="button"><a class="btn btn-success" role="button" href="tel:01642911168" style="font-family: sans-serif;"><i class="fa fa-phone-square" aria-hidden="true"></i>xxxxxxxx</a></li>
      					</ul>
      				</div>
+                    <div id="countdown" style="margin-top: 0px; position: absolute; margin-left: -5%;">
+                        <div class="countdown" style="position: absolute; margin-left: 10%;" >
+                            <span id="d" style="border:1px solid yellow; border-radius: 3px; font-size: 20px; background-color: red; font-family: sans-serif; color: #fff; margin: 0px 0%;"></span>
+                            <span id="h" style="border:1px solid yellow; border-radius: 3px; font-size: 20px; background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="m" style="border:1px solid yellow; border-radius: 3px; font-size: 20px;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="s" style="border:1px solid yellow; border-radius: 3px; font-size: 20px;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                        </div>
+                        <img src="images/hoa-dao-rgb.png" width="50%" height="auto" style="position: relative; margin-top: -7%;"> 
+                    </div>
      				<!-- /.navbar-collapse -->
      			</div>
      			<!-- /.container- -->
@@ -1258,6 +1268,31 @@
      <script src="js/waypoints.min.js"></script>
      <script src="js/jquery.counterup.min.js"></script>
      <script src="js/script.js"></script>
+     <script src="js/Countdown.js"></script>
+     <script src="js/jquery.countdown.min.js"></script>
+     <script src="js/jquery.countdown.js"></script>
+     <!-- <script type="text/javascript">
+        $("#d").countdown("2018/02/16", function(event) {
+            $(this).text(
+              event.strftime('%D')
+              );
+        });
+        $("#h").countdown("2018/02/16", function(event) {
+            $(this).text(
+              event.strftime('%H')
+              );
+        });
+        $("#m").countdown("2018/02/16", function(event) {
+            $(this).text(
+              event.strftime('%M')
+              );
+        });
+        $("#s").countdown("2018/02/16", function(event) {
+            $(this).text(
+              event.strftime('%S')
+              );
+        });
+     </script> -->
 
 
  </body>

@@ -95,14 +95,15 @@ p {
         background-color: transparent;
     }
     .navbar-default .navbar-nav>li>a {
-        color: red;
-        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-family: 'Raleway', Arial;
+        text-transform: uppercase;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: #000;
+        color: #fff;
     }
     .navbar-default .navbar-nav>li>a:focus {
-        color: #B5B5B5;
+        color: red;
     }
     .navbar-default {
         -webkit-transition: all 1s;
@@ -138,7 +139,7 @@ p {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     background: transparent;
-    color: #f39c12;
+    color: blue;
 }
 .header {
     background: url(../images/bg_header.png);
@@ -1092,4 +1093,7 @@ select:-webkit-autofill {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
+}
+.nav li a {
+    color: #fff;
 }
