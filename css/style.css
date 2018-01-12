@@ -132,8 +132,10 @@ p {
 }
 @media (max-width: 768px) {
     .navbar-brand img {} .navbar-default {
+
       /*  background-color: #fff !important; */
   }
+    
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
@@ -1096,4 +1098,18 @@ select:-webkit-autofill {
 }
 .nav li a {
     color: #fff;
+}
+.countdown{
+    position: absolute;
+    margin-left: 4.15%;
+    margin-top: 0.8%;
+}
+@media only screen and (max-width: 768px){
+    .countdown{
+        
+        margin-left: 14.5%;
+        margin-top: 2.1%;
+    
+    }
+
 }

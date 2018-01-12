@@ -9,7 +9,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -19,10 +20,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	
 	<!-- Bootstrap -->
-	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Owl Carousel Assets -->
 	<link href="css/owl.carousel.css" rel="stylesheet">
@@ -71,6 +72,40 @@
  <!-- =========================
      START ABOUT US SECTION
      ============================== -->
+     <div id="dang-ky-uu-dai" class="modal fade" role="dialog">
+        <div class="modal-dialog" >
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="font-family: sans-serif; text-align: center;">Chỉ với 4s đăng ký nhận ngay mã giảm giá <span style="font-weight: bold; color: red;">200.000đ</span> </h4>
+                   
+                </div>
+                <div class="modal-body">
+
+                    <form role="form" action="/contact.php">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <input type="text" class="form-control" id="name" placeholder="Họ tên">
+                                <br>
+                                <input type="text" class="form-control" id="sđt" placeholder="Số điện thoại">
+                                <br>
+                                <button type="submit" class="btn btn-success submit-btn" style="font-family: sans-serif;">GỬI ĐĂNG KÝ</button>
+                            </div>
+                        </div>
+                         
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
      <section class="header parallax home-parallax page" id="HOME" style="background-color: #b10001;">
      	<h2></h2>
      	<div class="section_overlay">
@@ -85,8 +120,16 @@
      						<span class="icon-bar"></span>
      					</button>
      					<a class="navbar-brand" href="#">
-     						<img src="images/logo2.png" alt="Logo">
+     						<img src="images/cd.png" alt="Logo" >
+
      					</a>
+                        <div class="countdown">
+                            <span id="d" style="border:1px solid yellow; border-radius: 3px; font-size: 1.2em; background-color: red; font-family: sans-serif; color: #fff; margin: 0px 0%;"></span>
+                            <span id="h" style="border:1px solid yellow; border-radius: 3px; font-size: 1.2em; background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="m" style="border:1px solid yellow; border-radius: 3px; font-size: 1.2em;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="s" style="border:1px solid yellow; border-radius: 3px; font-size: 1.2em;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                        </div>
+
      				</div>
                     
      				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -102,16 +145,20 @@
                             <li type="button"><a class="btn btn-success" role="button" href="tel:01642911168" style="font-family: sans-serif;"><i class="fa fa-phone-square" aria-hidden="true"></i>xxxxxxxx</a></li>
      					</ul>
      				</div>
-                    <div id="countdown" style="margin-top: 0px; position: absolute; margin-left: -5%;">
-                        <div class="countdown" style="position: absolute; margin-left: 10%;" >
-                            <span id="d" style="border:1px solid yellow; border-radius: 3px; font-size: 20px; background-color: red; font-family: sans-serif; color: #fff; margin: 0px 0%;"></span>
-                            <span id="h" style="border:1px solid yellow; border-radius: 3px; font-size: 20px; background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
-                            <span id="m" style="border:1px solid yellow; border-radius: 3px; font-size: 20px;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
-                            <span id="s" style="border:1px solid yellow; border-radius: 3px; font-size: 20px;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                    
+                        
+                    <!-- <div id="countdown" style="margin-top: 0px; position: absolute; margin-left: -8%; width: 15%;">
+                        <div class="countdown" style="position: absolute; margin-left: 24%;" >
+                            <span id="d" style="border:1px solid yellow; border-radius: 3px; font-size: 1.5em; background-color: red; font-family: sans-serif; color: #fff; margin: 0px 0%;"></span>
+                            <span id="h" style="border:1px solid yellow; border-radius: 3px; font-size: 1.5em; background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="m" style="border:1px solid yellow; border-radius: 3px; font-size: 1.5em;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
+                            <span id="s" style="border:1px solid yellow; border-radius: 3px; font-size: 1.5em;background-color: red;font-family: sans-serif;color: #fff; margin: 0px 0%;"></span>
                         </div>
-                        <img src="images/hoa-dao-rgb.png" width="50%" height="auto" style="position: relative; margin-top: -7%;"> 
-                    </div>
+                        <img src="images/hoa-dao-rgb.png" width="100%" height="auto" style="position: relative; margin-top: -7%;"> 
+                    </div> -->
+                        
      				<!-- /.navbar-collapse -->
+                    
      			</div>
      			<!-- /.container- -->
      		</nav>
@@ -263,7 +310,7 @@
                         </div>
                         
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-toggle="modal" data-target="#Modal1">
                         <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                             <!-- PHONE -->
 
@@ -276,10 +323,83 @@
                                     <a href="" class="btn btn-default" role="button">Xem nhanh</a>
                                 </div>
                             </div> -->
+                        </div>    
+                    </div>
+                    <div id="Modal1" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Thông tin sản phẩm</h4>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <div class="feature_inner">
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="feature_iphone zoomItem ">
+                                                        
+                                                        <img class="wow bounceIn" data-wow-duration="1s" src="images/iPhone02.png" alt="">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-8 left_no_padding wow fadeInRight" data-wow-duration="1s">
+
+                                                    
+                                                    <div class="right_single_feature zoomIn">
+                                                        
+                                                        <div><span class="pe-7s-monitor"></span></div>
+
+                                                        
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+
+
+                                                
+                                                    <div class="right_single_feature zoomIn">
+                                                        
+                                                        <div><span class="pe-7s-phone"></span></div>
+
+                                                        
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+
+
+                                                    
+                                                    <div class="right_single_feature zoomIn">
+                                                    
+                                                        <div><span class="pe-7s-gleam"></span></div>
+
+                                                    
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                                <div  class="col-md-2 col-md-offset-1"><a href="" class="btn btn-danger" role="button">Mua ngay</a></div>
+                                                <div  class="col-md-2"><a href="" class="btn btn-default" role="button" style="position: center;">Xem chi tiết</a></div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
                         </div>
                         
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-toggle="modal" data-target="#Modal1">
                         <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                             <!-- PHONE -->
 
@@ -292,106 +412,85 @@
                                     <a href="" class="btn btn-default" role="button">Xem nhanh</a>
                                 </div>
                             </div> -->
+                        </div>    
+                    </div>
+                    <div id="Modal1" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Thông tin sản phẩm</h4>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <div class="feature_inner">
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="feature_iphone zoomItem ">
+                                                        
+                                                        <img class="wow bounceIn" data-wow-duration="1s" src="images/iPhone02.png" alt="">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-8 left_no_padding wow fadeInRight" data-wow-duration="1s">
+
+                                                    
+                                                    <div class="right_single_feature zoomIn">
+                                                        
+                                                        <div><span class="pe-7s-monitor"></span></div>
+
+                                                        
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+
+
+                                                
+                                                    <div class="right_single_feature zoomIn">
+                                                        
+                                                        <div><span class="pe-7s-phone"></span></div>
+
+                                                        
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+
+
+                                                    
+                                                    <div class="right_single_feature zoomIn">
+                                                    
+                                                        <div><span class="pe-7s-gleam"></span></div>
+
+                                                    
+                                                        <h5>Thông tin sản phẩm</h5>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                                <div  class="col-md-2 col-md-offset-1"><a href="" class="btn btn-danger" role="button">Mua ngay</a></div>
+                                                <div  class="col-md-2"><a href="" class="btn btn-default" role="button" style="position: center;">Xem chi tiết</a></div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
                         </div>
                         
                     </div>
-                    <br>
-     				<!-- <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-     					
-                        <div class="inner_about_desc">
-
-                        	<div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
-                        		<br>
-                        	</div>
-                        	<div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
-                        		<br>
-                        	</div>
-
-                        	
-                        	<div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
-                        		
-                        		<div><i class="pe-7s-timer"></i></div>
-                        		
-                        		<h3>Lorem ipsum dolor sit amet</h3>
-                        		<p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
-                        	</div>
-                        	
-
-
-                        	
-                        	<div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1.5s">
-                        		
-                        		<div><i class="pe-7s-target"></i></div>
-                        		
-                        		<h3>Lorem ipsum dolor sit amet</h3>
-                        		<p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
-                        	</div>
-                        	
-
-
-                        	
-                        	<div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="2s">
-                        		
-                        		<div><i class="pe-7s-stopwatch"></i></div>
-                        		
-                        		<h3>Lorem ipsum dolor sit amet</h3>
-                        		<p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
-                        	</div>
-                        	
-
-                        </div>
-                    </div> -->
+     				
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!-- PHONE -->
-
-                            <img src="images/5.png" alt="" width="380px" height="380px" class="img-thumbnail zoomItem" >
-                            <!-- <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-danger" role="button">Đặt mua</a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-default" role="button">Xem nhanh</a>
-                                </div>
-                            </div> -->
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!-- PHONE -->
-
-                            <img src="images/5.png" alt="" width="380px" height="380px" class="img-thumbnail zoomItem" >
-                           <!--  <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-danger" role="button">Đặt mua</a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-default" role="button">Xem nhanh</a>
-                                </div>
-                            </div> -->
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!-- PHONE -->
-
-                            <img src="images/5.png" alt="" width="380px" height="380px" class="img-thumbnail zoomItem" >
-                            <!-- <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-danger" role="button">Đặt mua</a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <a href="" class="btn btn-default" role="button">Xem nhanh</a>
-                                </div>
-                            </div> -->
-                        </div>
-                        
-                    </div>
-                </div>
+                
                 <div><br></div>
                 <div><br></div>
                 <div class="row">
@@ -436,10 +535,10 @@
     <section class="apps_screen page" id="SCREENS">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 wow fadeInBig" data-wow-duration="1s">
+                <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
                     <!-- APPS SCREEN TITLE -->
                     <div class="section_title">
-                        <h2 style="font-family: Sans-serif;">Đồng hồ</h2>
+                        <h2 style="font-family: Sans-serif; text-align: center;">Đồng hồ</h2>
                                                   
                     </div>
                     <!-- END APPS SCREEN TITLE -->
@@ -559,10 +658,10 @@
     <section id="FEATURES" class="features page">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-12">
                     <!-- FEATURES SECTION TITLE -->
                     <div class="section_title wow fadeIn" data-wow-duration="1s">
-                        <h2 style="font-family: sans-serif;">Điện Thoại</h2>
+                        <h2 style="font-family: sans-serif;text-align: center;">Điện Thoại</h2>
                         <p></p>
                     </div>
                     <!-- END FEATURES SECTION TITLE -->
